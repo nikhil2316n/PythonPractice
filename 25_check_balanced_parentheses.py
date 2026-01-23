@@ -1,7 +1,6 @@
 s='({{[]}})'
 
 lt=[]
-print("program started")
 x=0
 for i in s:
     if i in '([{':
