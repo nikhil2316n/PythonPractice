@@ -9,3 +9,4 @@ print(f"Number of elements missing are: {len(new)-len(arr)}")
 for j in range(min(arr),max(arr)):
     if j not in arr:
         print(j)
+print(new)
