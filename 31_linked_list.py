@@ -27,6 +27,19 @@ class LinkedList:
             print(temp.data, end=" -> ")
             temp = temp.next
         print("None")
+    
+    def display_rev(self):
+        stack=[]
+        temp=self.head
+        while temp:
+            stack.append(temp.data)
+            temp=temp.next
+        
+        while stack:
+            print(stack.pop(),end=" -> ")
+
+        print("None")
+
 
 
 # Creating linked list object
@@ -36,5 +49,5 @@ ll.insert_at_end(10)
 ll.insert_at_end(20)
 ll.insert_at_end(30)
 ll.insert_at_end(40)
-
 ll.display()
+ll.display_rev()
