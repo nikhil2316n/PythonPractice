@@ -1,9 +1,7 @@
-arr=[1,6,5,3,9,8,7]
-arr.sort()
-max=arr[0]
+str_="Nikhilsagar".lower()
 
-for i in arr:
-    if i>max:
-        max=i
+dict_={}
+for i in str_:
+    dict_[i]=str_.count(i)
 
-print(max)
+print(dict_)
