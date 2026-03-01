@@ -1,4 +1,4 @@
-str1="madam"
+str1="madamcls"
 temp=""
 for i in range(1,len(str1)+1):
     temp=temp+str1[-i]
