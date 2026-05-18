@@ -14,9 +14,29 @@
 #  The decrypted code is [7+1+4, 1+4+5, 4+5+7, 5+7+1]. Notice that the numbers wrap around.
 
 
-nums=[1,2,3,4,5,6,7,8,9]
-start=3
-n=len(nums)
-for i in range(n):
-    index=(start+i)%n
-    print(nums[index])
+class Solution(object):
+    def decrypt(self, code, k):
+
+        n = len(code)
+        result = [0] * n
+
+        if k == 0:
+            return result
+
+        for i in range(n):
+
+            total = 0
+
+            if k > 0:
+
+                for j in range(1, k + 1):
+                    total += code[(i + j) % n]
+
+            else:
+
+                for j in range(1, abs(k) + 1):
+                    total += code[(i - j) % n]
+
+            result[i] = total
+
+        return result
