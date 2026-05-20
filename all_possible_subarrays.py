@@ -9,8 +9,3 @@ for k in range(1,len(arr)+1):
         for i in range(j,j+k):
             print(arr[i],end=' ')
         print(' ')
-    
-        
-
-    
-        

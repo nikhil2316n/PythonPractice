@@ -1,7 +1,5 @@
 tartget=7
 nums=[2,3,1,2,4,3]
-
-print('hello')
 left=0
 right=0
 windows_size=float('inf')
@@ -16,4 +14,6 @@ while(right<len(nums)):
     right+=1
 
 print(windows_size)
+
+
     
