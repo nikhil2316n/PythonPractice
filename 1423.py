@@ -7,6 +7,7 @@ sum=0
 for i in range(left,len(arr)):
     sum+=arr[i]
 max1=sum
+
 while(k>0):
     sum-=arr[left]
     left+=1
