@@ -10,4 +10,3 @@ while(left<=right):
     if(nums[right]==target):
         newarr.append(right)
     right-=1
-print(newarr)
